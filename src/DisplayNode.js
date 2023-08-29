@@ -4,7 +4,7 @@ export const DisplayNode = new NodeBuilder("DisplayNode")
     .setName("Display")
     .addInputInterface("Value")
     .addOption("ValueText", "TextOption")
-	.addOption("Test", "InputOption")
+	  .addOption("Test", "InputOption")
     .onCalculate((n) => {
 		let value = n.getInterface("Value").valuel 
 		if(typeof value === "number"){
